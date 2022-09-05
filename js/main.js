@@ -57,7 +57,7 @@ setInterval(() => {
     elTitleFinish.style.margin = "0px"
     elContainer.appendChild(elTitleFinish)
     alert(elTitleFinish.textContent)
-    // elInput.disabled
+    elInput.setAttribute("disabled")
   }
 }, 1000);
 
