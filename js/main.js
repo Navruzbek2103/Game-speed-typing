@@ -14,23 +14,24 @@ let elsecundSpan = document.querySelector(".secund-span");
 
 elClockTitle.style.margin = '0px'
 
-elContainer.style.width = "15%"
+elContainer.style.width = "300px"
 elContainer.style.margin = "30px auto"
 elContainer.style.display = "flex"
-elContainer.style.gap = "10px"
+elContainer.style.gap = "25px"
 elContainer.style.flexDirection = "column"
 elContainer.style.alignItems = "center"
 elContainer.style.padding = "30px 20px"
 elContainer.style.boxShadow = "0 0 20px 5px blue"
 elContainer.style.borderRadius = "10px"
 
-elInput.style.fontSize = "18px"
+elInput.style.fontSize = "16px"
 elInput.style.fontFamily = "Arial"
-elInput.style.padding = "5px"
+elInput.style.padding = "8px"
+elInput.style.borderRadius = "5px"
 elInput.placeholder = "Input word"
 
 boxResult.style.display = "flex";
-boxResult.style.width = "90%";
+boxResult.style.width = "80%";
 boxResult.style.justifyContent = "space-between"
 
 coinStrong.style.fontSize = "20px"
@@ -38,6 +39,7 @@ errorStrong.style.fontSize = "20px"
 
 let rand = Math.trunc(Math.random() * array.length)
 elHeading.textContent = array[rand]
+elHeading.style.margin = "0"
 
 
 elSpanCoin.textContent = 0;
