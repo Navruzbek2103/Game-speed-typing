@@ -15,7 +15,7 @@ let elsecundSpan = document.querySelector(".secund-span");
 elClockTitle.style.margin = '0px'
 
 elContainer.style.width = "300px"
-elContainer.style.margin = "30px auto"
+elContainer.style.margin = "70px auto"
 elContainer.style.display = "flex"
 elContainer.style.gap = "25px"
 elContainer.style.flexDirection = "column"
@@ -24,7 +24,7 @@ elContainer.style.padding = "30px 20px"
 elContainer.style.boxShadow = "0 0 20px 5px blue"
 elContainer.style.borderRadius = "10px"
 
-elInput.style.fontSize = "16px"
+elInput.style.fontSize = "18px"
 elInput.style.fontFamily = "Arial"
 elInput.style.padding = "8px"
 elInput.style.borderRadius = "5px"
@@ -50,7 +50,7 @@ setInterval(() => {
   if(elsecundSpan.textContent == 0){
     elBody.style.backgroundColor = 'red'
     elContainer.style.backgroundColor = "white"
-    elContainer.style.boxShadow = "0 0 30px 15px yellow"
+    elContainer.style.boxShadow = "0 0 50px 15px yellow"
   }
 }, 1000);
 
