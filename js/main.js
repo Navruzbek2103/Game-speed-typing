@@ -17,7 +17,7 @@ elClockTitle.style.margin = '0px'
 elContainer.style.width = "300px"
 elContainer.style.margin = "70px auto"
 elContainer.style.display = "flex"
-elContainer.style.gap = "25px"
+elContainer.style.gap = "40px"
 elContainer.style.flexDirection = "column"
 elContainer.style.alignItems = "center"
 elContainer.style.padding = "30px 20px"
@@ -51,6 +51,13 @@ setInterval(() => {
     elBody.style.backgroundColor = 'red'
     elContainer.style.backgroundColor = "white"
     elContainer.style.boxShadow = "0 0 50px 15px yellow"
+    elClockTitle.textContent = "00 : 00"
+    let elTitleFinish = document.createElement("h2")
+    elTitleFinish.textContent = "Vaqtingiz tugadi!"
+    elTitleFinish.style.margin = "0px"
+    elContainer.appendChild(elTitleFinish)
+    alert(elTitleFinish.textContent)
+    // elInput.disabled
   }
 }, 1000);
 
