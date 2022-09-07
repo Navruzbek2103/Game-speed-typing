@@ -66,9 +66,9 @@ setInterval(() => {
 
 elInput.addEventListener("input", () => {
   if(elHeading.textContent === elInput.value){
-    elSpanCoin.textContent++
+    elSpanCoin.textContent++;
     let rand = Math.trunc(Math.random() * array.length)
-    elHeading.textContent = array[rand]
+    elHeading.textContent = array[rand];
     elInput.value = "";
   }
 })
