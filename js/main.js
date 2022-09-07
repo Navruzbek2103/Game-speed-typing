@@ -1,4 +1,5 @@
 let array = ["alias", "consequatur", "voluptates", "dolores", "voluptatibus", "laborum", "culpa", "numquam", "Perspiciatis", "maxime", "officia", "quam", "odit", "nobis", "esse", "nihil", "veniam", "corporis", "voluptatibus", "harum", "Veritatis", "elit", "adipisicing", "consectetur", "amet", "sit", "dolor", "ipsum", "Lorem"]
+let elModal = document.querySelector(".myModal");
 
 let elBody = document.querySelector("body")
 let elContainer = document.querySelector(".container");
@@ -48,7 +49,7 @@ elSpanError.textContent = 0;
 setInterval(() => {
   elsecundSpan.textContent -= 1;
   if(elsecundSpan.textContent == 0){
-    elBody.style.backgroundColor = 'red'
+    // elBody.style.backgroundColor = 'red'
     elContainer.style.backgroundColor = "white"
     elContainer.style.boxShadow = "0 0 50px 15px yellow"
     elClockTitle.textContent = "00 : 00"
@@ -57,7 +58,9 @@ setInterval(() => {
     elTitleFinish.style.margin = "0px"
     elContainer.appendChild(elTitleFinish)
     alert(elTitleFinish.textContent)
-    elInput.setAttribute("disabled")
+    elInput.setAttribute("disabled", true);
+    elInput.value = "";
+
   }
 }, 1000);
 
@@ -68,5 +71,4 @@ elInput.addEventListener("input", () => {
     elHeading.textContent = array[rand]
     elInput.value = "";
   }
-
 })
